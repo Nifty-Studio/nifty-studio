@@ -1,1 +1,2 @@
-# Untitled-Web3-Movie-DAO
+# StudioDAO
+Web3 Project to help fund movie productions
