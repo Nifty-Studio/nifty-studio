@@ -14,6 +14,8 @@ import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selector';
 
+import { getWeb3 } from './utils.js';
+
 import "./App.css";
 
 class App extends React.Component{
