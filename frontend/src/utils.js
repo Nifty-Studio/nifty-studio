@@ -31,4 +31,6 @@ const getWeb3 = () => {
 
 };
 
-export { getWeb3 }
+const getContracts = async web3 => { };
+
+export { getWeb3, getContracts }

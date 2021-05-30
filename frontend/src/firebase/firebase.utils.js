@@ -3,14 +3,13 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: "AIzaSyCZ1veQMvQwwkb1ka0-zVm2nrk7OgiyDmU",
-  authDomain: "react-ecommerce-caf86.firebaseapp.com",
-  databaseURL: "https://react-ecommerce-caf86.firebaseio.com",
-  projectId: "react-ecommerce-caf86",
-  storageBucket: "react-ecommerce-caf86.appspot.com",
-  messagingSenderId: "522930649756",
-  appId: "1:522930649756:web:f062c083dee844c8440b59",
-  measurementId: "G-M8X1HNCPV0"
+  apiKey: "AIzaSyC18U3QVkekzax8vroH5g7Yo2r7hLzK5rQ",
+  authDomain: "nifty-studio.firebaseapp.com",
+  projectId: "nifty-studio",
+  storageBucket: "nifty-studio.appspot.com",
+  messagingSenderId: "535520760420",
+  appId: "1:535520760420:web:fa04f90253320214fd4571",
+  measurementId: "G-JDJ6X6FVW7"
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
