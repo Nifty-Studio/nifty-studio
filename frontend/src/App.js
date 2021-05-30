@@ -3,7 +3,6 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 
 import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component'
-import CheckoutPage from './pages/checkout/checkout.component'
 import AccountPage from './pages/account/account.component';
 import DetailPage from './pages/detail/detail.component';
 
@@ -15,8 +14,6 @@ import { auth, createUserProfileDocument } from "./firebase/firebase.utils.js";
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selector';
-
-import { getWeb3 } from './utils.js';
 
 import "./App.css";
 
@@ -56,7 +53,6 @@ class App extends React.Component{
           <Route path="/shop" component={ShopPage} />
           <Route path="/account" component={AccountPage} />
           <Route path="/detail/:id" render = {routeProps => DetailPage(routeProps)} />
-          <Route exact path='/checkout' component={CheckoutPage} />
           <Route 
           exact
           path="/signin" 

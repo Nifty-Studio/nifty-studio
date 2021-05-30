@@ -1,4 +1,6 @@
 import React from 'react';
+import { Document, Page } from 'react-pdf';
+import { useState } from 'react';
 
 import './detail.styles.scss';
 import SHOP_DATA from '../../redux/shop/shop.data';
@@ -12,10 +14,34 @@ const Detail = props => {
 
     return (
         foundDetail &&
-        <React.Fragment>
-            <p>{`This is ${foundDetail.name}.`}</p>
-            <img src={foundDetail.imageUrl} alt='' />
-        </React.Fragment>
+        <div>
+            <div className="detail">
+                <img src={foundDetail.imageUrl} alt='' />
+                <pre className="wrapped">
+                    <h3>{`Production Title: ${foundDetail.name}`}</h3>
+                    <div className="detail">
+                        <p>{`Director: ${foundDetail.director}    `}</p>
+                        <p>{`Wallet: ${foundDetail.directorAddress}`}</p>
+                    </div>
+                    <div className="detail">
+                        <p>{`Writer: ${foundDetail.writer}    `}</p>
+                        <p>{`Wallet: ${foundDetail.writerAddress}`}</p>
+                    </div>
+                    <div className={`${1} script-item`} onClick={() => {}}>
+                        <div className="background-image"
+                            style={{
+                            backgroundImage: ``
+                            }}
+                        />
+                        <div className="content">
+                            <h1 className="title">Script</h1>
+                        </div>
+                    </div>
+                </pre>
+            </div>
+            <div className="detail">
+            </div>
+        </div>
     ); 
 }
 

@@ -8,6 +8,8 @@ import  {store, persistor}  from './redux/store.js';
 import './index.css';
 import App from './App';
 
+// import './shim';
+
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
