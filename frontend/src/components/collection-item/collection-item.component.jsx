@@ -2,19 +2,21 @@ import React from 'react';
 import { connect } from 'react-redux';
 import CustomButton from '../custom-button/custom-button.component.jsx';
 import { addItem }from '../../redux/cart/cart.actions.js';
+import { Link } from 'react-router-dom';
 
 import './collection-item.styles.scss';
 
 
 const CollectionItem = ({item, addItem}) => {
-    const {name, price, imageUrl} = item;
+    const {name, price, imageUrl, id} = item;
     return (
       <div className="collection-item">
-        <div
+        <Link
           className="image"
           style={{
             backgroundImage: `url(${imageUrl})`
           }}
+          to={`/detail/${id}`}
         />
         <div className="collection-footer">
           <span className="name"> {name} </span>
