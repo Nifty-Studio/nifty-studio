@@ -1,6 +1,5 @@
 import React from 'react';
-import { Document, Page } from 'react-pdf';
-import { useState } from 'react';
+import Button from '../../components/custom-button/custom-button.component';
 
 import './detail.styles.scss';
 import SHOP_DATA from '../../redux/shop/shop.data';
@@ -27,6 +26,9 @@ const Detail = props => {
                         <p>{`Writer: ${foundDetail.writer}    `}</p>
                         <p>{`Wallet: ${foundDetail.writerAddress}`}</p>
                     </div>
+                    <div className="detail">
+                        <p>{`Pool Amount: ${foundDetail.price}`}</p>
+                    </div>
                     <div className={`${1} script-item`} onClick={() => {}}>
                         <div className="background-image"
                             style={{
@@ -37,6 +39,7 @@ const Detail = props => {
                             <h1 className="title">Script</h1>
                         </div>
                     </div>
+                    <Button>Stake In Production</Button>
                 </pre>
             </div>
             <div className="detail">
